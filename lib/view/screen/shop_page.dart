@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:sneakertute/data/model/shoe.dart';
 import 'package:sneakertute/view/components/shoe_tile.dart';
 
+import '../../core/const/images.dart';
+
 class ShopPage extends StatelessWidget {
   const ShopPage({super.key});
 
@@ -35,9 +37,13 @@ class ShopPage extends StatelessWidget {
         ],),
       ),
       const SizedBox(height: 10,),
-      Expanded(child: ListView.builder(itemBuilder:
-          (context, index) => ShoeTile(
-            shoe:Shoe("", "price", "imagePath", "description"),
+
+      Expanded(child: ListView.builder(
+        scrollDirection:Axis.horizontal, itemCount:4,
+        itemBuilder: (context, index) => ShoeTile(
+            shoe:Shoe("Air Jordan", "240",
+                ImageAssets.air_Jordan ,
+                "cool shoe"),
           ),))
     ],);
   }

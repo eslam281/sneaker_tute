@@ -44,7 +44,7 @@ class _HomePageState extends State<HomePage> {
         backgroundColor: Colors.grey[900],
         child:Column(children: [
           Column(children: [
-            Padding(padding: const EdgeInsets.all(10),child:Image.asset(AssetsImage.nike,
+            Padding(padding: const EdgeInsets.all(10),child:Image.asset(ImageAssets.nike,
               color:Colors.white,),),
 
             Padding(padding: const EdgeInsets.symmetric(horizontal: 25),

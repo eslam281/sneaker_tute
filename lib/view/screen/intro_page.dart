@@ -17,7 +17,7 @@ class IntroPage extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Padding(padding: const EdgeInsets.all(25),
-              child: Image.asset(AssetsImage.nike,colorBlendMode:BlendMode.darken , color:Colors.grey[300],),
+              child: Image.asset(ImageAssets.nike,colorBlendMode:BlendMode.darken , color:Colors.grey[300],),
               ),
 
              const SizedBox(height: 48,),
