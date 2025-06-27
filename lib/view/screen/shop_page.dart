@@ -3,6 +3,7 @@ import 'package:sneakertute/data/model/shoe.dart';
 import 'package:sneakertute/view/components/shoe_tile.dart';
 
 import '../../core/const/images.dart';
+import '../../data/model/cart.dart';
 
 class ShopPage extends StatelessWidget {
   const ShopPage({super.key});
@@ -41,10 +42,12 @@ class ShopPage extends StatelessWidget {
       Expanded(child: ListView.builder(
         scrollDirection:Axis.horizontal, itemCount:4,
         itemBuilder: (context, index) => ShoeTile(
-            shoe:Shoe("Air Jordan", "240",
-                ImageAssets.air_Jordan ,
-                "cool shoe"),
-          ),))
+            shoe:Cart...[index]
+          ),)),
+      const Padding(
+        padding: EdgeInsets.only(top: 25,left:25,right: 25),
+        child: Divider(color:Colors.white,),
+      )
     ],);
   }
 }
