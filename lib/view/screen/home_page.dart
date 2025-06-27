@@ -43,26 +43,28 @@ class _HomePageState extends State<HomePage> {
       drawer:Drawer(
         backgroundColor: Colors.grey[900],
         child:Column(children: [
-          Padding(padding: const EdgeInsets.all(10),child:Image.asset(AssetsImage.nike,
-          color:Colors.white,),),
+          Column(children: [
+            Padding(padding: const EdgeInsets.all(10),child:Image.asset(AssetsImage.nike,
+              color:Colors.white,),),
 
-          Padding(padding: const EdgeInsets.symmetric(horizontal: 25),
-          child:Divider(color:Colors.grey[800],),),
+            Padding(padding: const EdgeInsets.symmetric(horizontal: 25),
+              child:Divider(color:Colors.grey[800],),),
 
-          const Padding(
-            padding: EdgeInsets.only(left: 25.0),
-            child: ListTile(
-              leading:Icon(Icons.home,color:Colors.white),
-              title:Text("Home",style:TextStyle(color:Colors.white),),
+            const Padding(
+              padding: EdgeInsets.only(left: 25.0),
+              child: ListTile(
+                leading:Icon(Icons.home,color:Colors.white),
+                title:Text("Home",style:TextStyle(color:Colors.white),),
+              ),
             ),
-          ),
-          const Padding(
-            padding: EdgeInsets.only(left: 25.0),
-            child: ListTile(
-              leading:Icon(Icons.info,color:Colors.white),
-              title:Text("About",style:TextStyle(color:Colors.white),),
+            const Padding(
+              padding: EdgeInsets.only(left: 25.0),
+              child: ListTile(
+                leading:Icon(Icons.info,color:Colors.white),
+                title:Text("About",style:TextStyle(color:Colors.white),),
+              ),
             ),
-          ),
+          ],),
           const Padding(
             padding: EdgeInsets.only(left: 25.0),
             child: ListTile(
